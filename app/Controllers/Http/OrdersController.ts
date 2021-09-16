@@ -21,7 +21,7 @@ export default class OrdersController {
     order.customersEmail = orderData.customersEmail
     await order.save()
 
-    return response.redirect().toRoute('OrdersController.show', [params.id])
+    return response.redirect().toRoute('OrdersController.index', [params.id])
   }
 }
 
